@@ -1,0 +1,12 @@
+git config --global user.name luiz030908
+git config --global user.email luizmiguelleite2023@gmail.com
+
+dotnet new mvc -o ToDoPlatForm
+
+cd ToDoPlatForm
+
+dotnet add package Microsoft.EntityFrameworkCore --version 10.0.3
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 10.0.3
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 10.0.3
+dotnet add package MySql.EntityFrameworkCore --version 10.0.1
+dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 10.0.3
