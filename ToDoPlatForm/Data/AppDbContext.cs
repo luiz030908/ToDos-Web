@@ -26,7 +26,7 @@ public class AppDbContext : IdentityDbContext<AppUser>
         builder.Entity<IdentityUserClaim<string>>().ToTable("user_claims");
         builder.Entity<IdentityUserToken<string>>().ToTable("user_tokens");
         builder.Entity<IdentityUserLogin<string>>().ToTable("user_logins");
-        builder.Entity<IdentityRoleClaim<string>>().ToTable("user_claims");
+        builder.Entity<IdentityRoleClaim<string>>().ToTable("role_claims");
         #endregion
 
     }
