@@ -1,7 +1,10 @@
-namespace ToDoPlatForm.Services;
+using Microsoft.AspNetCore.Identity;
+using ToDoPlatform.ViewModels;
+
+namespace ToDoPlatform.Services;
 
 public interface IUserService
 {
-    Task<SignResult> Login(LoginVM login);
+    Task<SignInResult> Login(LoginVM login);
     Task Logout();
 }
